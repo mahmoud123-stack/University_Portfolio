@@ -1,0 +1,198 @@
+:root {
+    --main-color: #4682b4;
+    --light-color: #B0c4de;
+    --dark-color: #19283f;
+    --green-color: #33d1cc;
+    --red-color: #ed3330;
+    --alt-red-color: #eb5757;
+    --yellow-color: #ffc400;
+    --blue-color: #2196f3;
+    --purple-color: #6c55e0;
+    --section-color: #eff7fa;
+    --input-background-color: #eff7fa;
+    --Transition: all .3s ease-in-out;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width:767px) {
+    .container {
+        width: 100%;
+    }
+}
+
+@media (min-width:768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+@media (min-width:992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media (min-width:1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--section-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--main-color);
+}
+
+/* ========== Start From Here =========== */
+
+.Developers-section {
+    padding-top: 80px;  
+}
+
+.developers-boxes {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(370px, 1fr));
+    gap: 40px;
+    padding-top: 120px;
+    padding-bottom: 70px;
+}
+
+.developers-boxes>.box {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    position: relative;
+    box-shadow: 0 0 10px var(--light-color);
+    border: 1px solid var(--input-background-color);
+    position: relative;
+}
+
+.developers-boxes>.box .image img {
+    position: absolute;
+    width: 90px;
+    top: -55px;
+    right: -9px;
+    border-radius: 50%;
+    border: 5px solid #eee;
+}
+
+.developers-boxes>.box .info {
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    gap: 25px;
+}
+
+.developers-boxes>.box .info h2 {
+    margin: 0;
+    font-size: 25px;
+    color: var(--main-color);
+    margin-bottom: 6px;
+}
+
+.developers-boxes>.box .info h4 {
+    margin: 0;
+    color: var(--light-color);
+    font-size: 20px;
+}
+
+.developers-boxes>.box .info p {
+    position: absolute;
+    margin: 0;
+    padding: 10px 20px;
+    color: var(--main-color);
+    top: 13%;
+    transform: rotate(90deg);
+    left: 62%;
+    background-color: #b0c4de63;
+    border-right: 1px solid var(--light-color);
+}
+
+.developers-boxes>.box .info .more-about {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.developers-boxes>.box .info .more-about .rate svg {
+    color: gold;
+}
+
+.developers-boxes>.box .info .more-about .skills {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.developers-boxes>.box .info .more-about .skills h4 {
+    margin: 0;
+}
+
+.developers-boxes>.box .info .more-about .skills div {
+    display: flex;
+    gap: 15px;
+}
+
+.developers-boxes>.box .info .more-about .skills span {
+    margin: 0;
+    padding: 12px;
+    display: block;
+    border-radius: 5px;
+    background-color: var(--input-background-color);
+    width: 65px;
+    text-align: center;
+    color: var(--alt-red-color);
+}
+
+
+.developers-boxes>.box .info .more-about .mastery {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.developers-boxes>.box .info .more-about .mastery div {
+    position: relative;
+    width: 45%;
+    height: 12px;
+    background-color: #eee;
+    border-radius: 10px;
+}
+
+.developers-boxes>.box .info .more-about .mastery div>div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 100%;
+    background-color: var(--light-color);
+    border-radius: 10px;
+}
